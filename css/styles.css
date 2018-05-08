@@ -1,0 +1,1601 @@
+/* Template: Rose Event Landing Page Template
+   Author: InovatikThemes
+   Version: 1.0.0
+   Created: April 2017
+   Description: Master CSS file
+*/
+
+
+/**********************************
+	TABLE OF CONTENTS
+
+01. Preloader 
+02. General Styles
+03. Navigation
+04. Header
+05. Subheader
+06. Description
+07. Highlights
+08. Agenda
+09. Speakers
+10. FAQ
+11. Sponsors
+12. Location
+13. Footer
+14. Back To Top Button
+17. Media Queries
+**********************************/
+
+
+/***** 01. Preloader *****/
+.main-wrapper {
+	overflow: hidden; /* used to keep the scroll bar on the pre-loader screen */
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(to bottom right, rgba(236, 50, 88, 1), rgba(239, 100, 57, 1)); /* change if the mask should have another color then white */
+	z-index: 9999; /* makes sure it stays on top */ 
+}
+
+#status {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 50%; /* centers the loading animation horizontally one the screen */
+	top: 50%; /* centers the loading animation vertically one the screen */
+	background-image: url(../images/preloader-gears.gif); /* path to your loading animation */
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -100px 0 0 -100px; /* is width and height divided by two */ 
+}
+
+ 
+/***** 02. General Styles *****/
+body {
+	font: 300 16px/1.6em "Source Sans Pro", sans-serif;
+	color: #4b4b4b;
+}
+
+h2 {
+	font: 800 32px/1.2em "Sansita", sans-serif;
+}
+
+h2 span {
+	color: #ec3258;
+}
+
+h3 {
+	font: 800 22px/1.3em "Sansita", sans-serif;
+}
+
+h4 {
+	font: 800 20px/1.3em "Sansita", sans-serif;
+}
+
+p {
+	font: 300 16px/1.5em "Source Sans Pro", sans-serif;
+}
+
+a {
+	font: 600 16px/1.5em "Source Sans Pro", sans-serif;
+	color: #4b4b4b;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #4b4b4b;
+}
+
+.button.solid {
+	display: inline-block;
+	margin-top: 15px;
+	max-width: 250px;
+	padding: 9px 35px 9px 35px;
+	font: 600 16px/1.4em "Source Sans Pro", sans-serif;
+	background-color: #ec3258;
+	color: #fff;
+	border: 2px solid #ec3258;
+	border-radius: 2px;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.button.solid:hover {
+	text-decoration: none;
+	border: 2px solid #ec3258;
+	background-color: #fff;
+	color: #ec3258;
+}
+
+
+/***** 03. Navigation *****/
+
+/* Navbar */
+.navbar {
+	background-color: #fff;
+}
+
+.navbar .nav.navbar-nav {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Logo */
+.navbar .navbar-brand {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 11px 15px 10px 15px;
+}
+
+.navbar .navbar-brand img {
+	width: 103px;
+	height: 35px; 
+}
+
+/* Menu links */
+.navbar .nav.navbar-nav li a {
+	color: #ec3258;
+	font: 600 14px/1em "Source Sans Pro", sans-serif; 
+}
+
+.navbar .nav.navbar-nav li a:hover,
+.navbar .nav.navbar-nav li.active a {
+	background-color: #ec3258;
+	color: #fff;
+}
+
+/* Mobile menu toggle button - pressed */
+.navbar .navbar-toggle,
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:active,
+.navbar .navbar-toggle.collapsed:active {
+	margin-top: 12px;
+	margin-bottom: 10px;
+	border: 1px solid #647780;
+	background-color: #647780;
+}
+
+.navbar .navbar-toggle .icon-bar,
+.navbar .navbar-toggle:hover .icon-bar,
+.navbar .navbar-toggle:active .icon-bar,
+.navbar .navbar-toggle.collapsed:active .icon-bar {
+	background-color: #f5f5f5;
+} 
+/* end of mobile menu toggle button - pressed */
+
+/* Mobile menu toggle button */
+.navbar .navbar-toggle.collapsed {
+	border: 1px solid #647780;
+	background-color: transparent;
+}
+
+.navbar .navbar-toggle.collapsed .icon-bar {
+	background-color: #647780;
+}
+/* end of mobile menu toggle button */
+
+
+/***** 04. Header *****/
+header {
+	position: relative;
+	min-height: auto;
+	width: 100%;
+	background: #ec3258; /* For browsers that do not support gradients */    
+    background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+	background-attachment: fixed; 
+}
+
+header .flex-container-wrapper {
+	/* IE fix for vertical alignment in flex box */
+	display: flex;
+	flex-direction: column;
+	height: 100%; 
+}
+
+header .header-content {
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 25px;
+	padding: 40px 0px 100px 0px;
+	min-height: 99vh; 
+	text-align: center;
+}
+
+header .header-content h1 {
+	margin-top: 0px;
+	font: 800 56px/1.1em "Sansita", sans-serif;
+	color: #fff;
+}
+
+header .header-content p {
+	margin-top: 30px;
+	font: 600 20px/1.5em "Source Sans Pro", sans-serif;
+	color: #fff;
+}
+
+header .header-content .countdown {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	font: 300 40px/0.6em "Lato", sans-serif;
+	color: #fff;
+}
+
+header .header-content .countdown #clock .counter-number {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+header .header-content .countdown #clock .separator {
+	display: inline-block;
+	margin-top: 18px;
+	margin-left: 5px;
+	margin-right: 5px;
+	height: 30px;
+	vertical-align: top;
+}
+
+header .header-content .countdown #clock .counter-number .timer-text {
+	margin-top: 0px;
+	font: 300 16px/1.2em "Source Sans Pro", sans-serif;
+	text-align: center;
+}
+
+header .header-content .button.transparent {
+	display: inline-block;
+	margin-top: 15px;
+	margin-left: 3px;
+	margin-right: 3px;
+	padding: 12px 46px 12px 46px;
+	font: 600 16px/1.3em "Source Sans Pro", sans-serif;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	color: #fff;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+header .header-content .button.transparent:hover {
+	border: 2px solid #fff;
+	background-color: #fff;
+	color: #ec3258;
+	text-decoration: none;
+}
+
+header .header-content #svg-header-bottom {
+	z-index: 1;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	bottom: 0px;
+	right: -1px;
+	fill: #ebebeb;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+
+/***** 05. Subheader *****/
+#subheader {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	text-align: center;
+	background-color: #ebebeb;
+}
+
+#subheader h2 {
+	margin-bottom: 25px;
+}
+
+#subheader p {
+	font: 300 18px/1.5em "Source Sans Pro", sans-serif;
+}
+
+#subheader form {
+	position: relative;
+	margin-top: 40px;
+}
+
+#subheader form input {
+	z-index: 9999;
+	margin-top: 20px;
+	padding-bottom: 7px;
+	height: 44px;
+	font: 300 16px/1.6em "Source Sans Pro", sans-serif;
+	border-radius: 2px;
+	border-color: #a3a3a3; 
+	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
+}
+
+#subheader form button {
+	display: block;
+	margin-top: 20px;
+	padding: 9px 53px 9px 53px;
+	width: 100%;
+	font: 600 16px/1.4em "Source Sans Pro", sans-serif;
+	background-color: #ec3258;
+	color: #fff;
+	border: 2px solid #ec3258;
+	border-radius: 2px;
+}
+
+#subheader form button:hover {
+	background-color: #fff;
+	color: #ec3258;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#subheader #svg-subheader-bottom {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	fill: #fff;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+/* Forms success and error message formatting */
+#rmsgSubmit.h3.text-center.tada.animated.text-success {
+	margin-top: 0px;
+	font: 600 20px/1.5em "Source Sans Pro", sans-serif;
+	color:  #ec3258;
+}
+
+#rmsgSubmit.h3.text-center.text-danger {
+	margin-top: 0px;
+	font: 600 16px/1.5em "Source Sans Pro", sans-serif;
+	color:  #ec3258;
+}
+
+
+/* 06. Description */
+#description {
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+#description h2 {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#description .swiper-container {
+	margin: 30px auto;
+	width: 100%;
+}
+
+#description .swiper-container .swiper-pagination-progressbar {
+	background: #ec3258;
+}
+
+
+#description .swiper-button-next {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ec3258'%2F%3E%3C%2Fsvg%3E");
+}
+
+#description .swiper-button-prev {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ec3258'%2F%3E%3C%2Fsvg%3E");
+}
+
+#description .swiper-slide {
+	font-size: 18px;
+	line-height: 300px;
+	text-align: center;
+	background: #fff;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 0.6s;
+  animation: fadeIn 0.6s;
+}
+
+
+/* 07. Highlights */
+#highlights {
+	padding-top: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+#highlights .highlights-icons {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 210px;
+	height: 180px;
+	background: #ec3258; /* For browsers that do not support gradients */    
+    background: linear-gradient(to bottom right, rgba(236, 50, 88, 1), rgba(239, 100, 57, 1));
+}
+
+#highlights .highlights-icons #svg-highlights-top-1,
+#highlights .highlights-icons #svg-highlights-top-2,
+#highlights .highlights-icons #svg-highlights-top-3 {
+	z-index: 1;
+	position: absolute;
+	margin: 0px;
+	top: -1px;
+	left: 0px;
+	fill: #fff;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+
+#highlights .highlights-icons span {
+	display: inline-block;
+	margin-top: 50px;
+	font-size: 78px;
+	color: #fff;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/* Highlights icons hover animation taken from animate.css */
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+#highlights .highlights-icons:hover span {
+    -webkit-animation: pulse 0.4s;
+    animation: pulse 0.4s;
+	animation-iteration-count: infinite;
+}
+
+
+#highlights h3 {
+	margin-top: 27px;
+	margin-bottom: 12px;
+}
+
+#highlights p {
+	margin-bottom: 50px;
+}
+
+
+/***** 08. Agenda *****/
+#agenda {
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+#agenda h2 {
+	margin-top: 10px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+#agenda .panel-group .panel {
+    border: 0px none;
+    border-radius: 0px;
+    box-shadow: none;
+}
+
+#agenda .event-time {
+	margin-top: 30px;
+	margin-bottom: 17px;
+	text-align: center;
+}
+
+#agenda .event-time.first {
+	margin-top: 25px;
+}
+
+
+#agenda .event-time h3 {
+	display: block;
+	margin-top: 35px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background-color: #ec3258;
+	color: #fff;
+}
+
+#agenda .panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+}
+
+/* Event title bar which expands with details */
+#agenda .panel-title > a {
+    display: block;
+    position: relative;
+	padding: 14px 50px 14px 15px;
+    font: 600 18px/1.5em "Source Sans Pro", sans-serif;
+    border: 1px solid #ef6439;
+	background: #fff;
+	color: #4b4b4b;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#agenda .panel-title > a:hover {
+    text-decoration: none;
+    outline: none;
+    background: #fff;
+    color: #4b4b4b;
+}
+
+#agenda .panel-title > a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+/* Minus toggle switch state */
+#agenda .panel-title > a:after,
+#agenda .panel-title > a.collapsed:after {
+    content: "\e622";
+    font-family: themify;
+    color: #ef6439;
+    background: #fff;
+	border: 1px solid #ef6439;
+	border-radius: 25px;
+    font-size: 15px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    padding: 8px 7px 8px 8px;
+	line-height: 0.9em;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/* Toggle switch hover properties */
+#agenda .panel-title > a:hover:after,
+#agenda .panel-title > a:hover.collapsed:after {
+	background: #ef6439;
+	color: #fff;
+}
+
+/* Plus toggle switch state */
+#agenda .panel-title > a.collapsed:after {
+    content: "\e61a";
+	background-color: #fff; 
+	color: #ef6439;
+}
+
+/* Event title bar with no details */
+#agenda .panel-title > a.no-details {
+	display: block;
+    position: relative;
+	padding: 14px 15px 14px 15px;
+    font: 600 18px/1.5em "Source Sans Pro", sans-serif;
+    border: 1px solid #ef6439;
+	background: #fff;
+	color: #4b4b4b;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#agenda .panel-title > a.no-details:after {
+	content: none;
+}
+
+/* Presentation details */
+#agenda .panel-body {
+    color: #3e3e3e;
+    background: #fff;
+	border: 1px solid #ef6439;
+    line-height: 24px;
+}
+
+#agenda .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0px none;
+}
+
+
+/***** 09. Speakers *****/
+#speakers {
+	position: relative;
+	padding-top: 20px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+#speakers h2 {
+	margin-bottom: 25px;
+}
+
+#speakers .speakers-panel {
+	display: inline-block;
+}
+
+#speakers .speakers-panel img {
+	width: 81%;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-top: 40px;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;	
+}
+
+#speakers .speakers-panel img:hover {
+	-webkit-filter: grayscale(1);
+	filter: grayscale(1);
+}
+
+#speakers .speakers-panel h3 {
+	margin-bottom: 5px;
+}
+
+#speakers .speakers-panel p {
+	margin-top: 5px;
+}
+
+#speakers #svg-speakers-bottom {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	fill: #ebebeb;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+/* Magnific PopUp Speakers Content */
+#speaker-1,
+#speaker-2,
+#speaker-3,
+#speaker-4,
+#speaker-5,
+#speaker-6,
+#speaker-7 {
+	position: relative;
+	margin: 40px auto;
+	padding: 20px 20px 30px 20px;
+	max-width: 1000px;
+	text-align: left;
+	background: #fff;
+}
+
+#speaker-1 h2,
+#speaker-2 h2,
+#speaker-3 h2,
+#speaker-4 h2,
+#speaker-5 h2,
+#speaker-6 h2,
+#speaker-7 h2 {
+	margin-top: 20px;
+}
+
+#speaker-1 hr,
+#speaker-2 hr,
+#speaker-3 hr,
+#speaker-4 hr,
+#speaker-5 hr,
+#speaker-6 hr,
+#speaker-7 hr   {
+	height: 1px;
+	margin-top: 15px;
+	margin-left: 0;
+	margin-bottom: 5px;
+	width: 32px;
+	border: 0;
+	background-color: #2a2a2a;
+}
+
+#speaker-1 p.job-title,
+#speaker-2 p.job-title,
+#speaker-3 p.job-title,
+#speaker-4 p.job-title,
+#speaker-5 p.job-title,
+#speaker-6 p.job-title,
+#speaker-7 p.job-title {
+	margin-bottom: 20px;
+	font: 300 26px/1.5em "Source Sans Pro", sans-serif;
+}
+
+#speaker-1 p.quote,
+#speaker-2 p.quote,
+#speaker-3 p.quote,
+#speaker-4 p.quote,
+#speaker-5 p.quote,
+#speaker-6 p.quote,
+#speaker-7 p.quote {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font: 300 22px/1.5em "Source Sans Pro", sans-serif;
+	font-style: italic;
+	color: #000;
+}
+
+#speaker-1 .social-icons,
+#speaker-2 .social-icons,
+#speaker-3 .social-icons,
+#speaker-4 .social-icons,
+#speaker-5 .social-icons,
+#speaker-6 .social-icons,
+#speaker-7 .social-icons {
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding: 16px;
+	font-size: 20px;
+	border: 1px solid #ec3258;
+	border-radius: 50px;
+	background-color: #fff;
+	color: #ec3258;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#speaker-1 .social-icons:hover,
+#speaker-2 .social-icons:hover,
+#speaker-3 .social-icons:hover,
+#speaker-4 .social-icons:hover,
+#speaker-5 .social-icons:hover,
+#speaker-6 .social-icons:hover,
+#speaker-7 .social-icons:hover {
+	border: 1px solid #ec3258;
+	border-radius: 50px;
+	background-color: #ec3258;
+	color: #fff;
+}
+
+/* Fade-move animation for small dialog */
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
+	-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+	transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+	opacity: 0;
+	-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+	opacity: 0;
+	-webkit-transition: opacity 0.3s ease-out; 
+	-moz-transition: opacity 0.3s ease-out; 
+	-o-transition: opacity 0.3s ease-out; 
+	transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+	opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+/***** 10. FAQ *****/
+#faq {
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	background-color: #ebebeb;
+}
+
+#faq h2 {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#faq .faq-row .row {
+	margin-top: 20px;
+}
+
+
+#faq .faq-row .faq-icons {
+	float: left;
+	position: relative;
+	margin-top: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: top;
+	width: 35px;
+	height: 32px;
+	text-align: center;
+	background: #ec3258; /* For browsers that do not support gradients */    
+    background: linear-gradient(to bottom right, rgba(236, 50, 88, 1), rgba(239, 100, 57, 1));
+}
+
+#faq .faq-row .faq-icons span.faq-icon-number {
+	display: inline-block;
+	margin-top: 1px;
+	font: 600 20px/1.5em "Source Sans Pro", sans-serif;
+	color: #fff;
+}
+
+#faq .faq-row .faq-text {
+	margin-left: 55px;
+}
+
+#faq .faq-row .faq-text p.question-text {
+	font: 600 18px/1.4em "Source Sans Pro", sans-serif;
+	margin-bottom: 0px;
+}
+
+#faq .faq-row .faq-icons #svg-faq-top-1,
+#faq .faq-row .faq-icons #svg-faq-top-2,
+#faq .faq-row .faq-icons #svg-faq-top-3,
+#faq .faq-row .faq-icons #svg-faq-top-4,
+#faq .faq-row .faq-icons #svg-faq-top-5,
+#faq .faq-row .faq-icons #svg-faq-top-6 {
+	z-index: 1;
+	position: absolute;
+	margin: 0px;
+	top: 0px;
+	left: 0px;
+	fill: #ebebeb;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+#faq h3 {
+	margin-top: 0px;
+}
+
+#faq #svg-faq-bottom {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: -1px;
+	left: 0px;
+	width: 100%;
+	fill: #fff;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+
+/***** 11. Sponsors *****/
+#sponsors {
+	padding-top: -10px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+#sponsors h2 {
+	margin-bottom: 5px;
+}
+
+#sponsors img {
+	display: inline-block;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	max-width: 190px;
+}
+
+#sponsors h3 {
+	margin-top: 35px;
+}
+
+#sponsors p {
+	margin-top: 20px;
+}
+
+#sponsors .button.solid span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 8px;
+	margin-bottom: 2px;
+	font-size: 18px;
+	color: #fff;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+#sponsors .button.solid:hover span {
+	color: #ec3258;
+}
+
+
+/***** 12. Location *****/
+#location {
+	position: relative;	
+	padding-top: 70px;
+	padding-bottom: 80px;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+
+#location h2 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#location .location-icons {
+	margin-right: 4px;
+}
+
+#location .location-icons.ti-email, 
+#location .location-icons.ti-world {
+	margin-right: 8px;
+}
+
+#location h2, #location h3, #location p {
+	color: #fff;
+}
+
+#location a {
+	color: #ff6282;
+}
+
+#location p.contact-email, 
+#location p.contact-website {
+	display: inline-block;
+}
+
+#location p.contact-email {
+	margin-right: 10px;
+	margin-bottom: 8px;
+}
+
+#location h3:nth-of-type(1) {
+	margin-top: 35px;
+	margin-bottom: 17px;
+}
+
+#location h3:nth-of-type(2) {
+	margin-top: 27px;
+	margin-bottom: 0px;
+}
+
+#location img {
+	margin-top: 35px;
+}
+
+#location .accommodation-description {
+	margin-top: 7px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#location .map-responsive {
+	overflow: hidden;
+	position: relative;
+	margin-top: 20px; 
+	padding-bottom: 96.25%;
+	height: 0;
+	border-radius: 1px;
+}
+
+#location .map-responsive iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	border: none; 
+}
+
+#location #svg-location-top {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	top: -1px;
+	left: 0px;
+	width: 100%;
+	fill: #fff;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+#location #svg-location-bottom {
+	z-index: 2;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	bottom: -1px;
+	left: 0px;
+	width: 100%;
+	fill: #ec3258;
+	pointer-events: none; /* required to allow links, forms and interactin to work in IE11 otherwise the svg "takes over" the section */
+}
+
+
+/***** 13. Footer *****/
+#footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #ec3258;
+	color: #fff;
+	text-align: center;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#footer h3 {
+	margin-top: 35px;
+	margin-bottom: 15px;
+}
+
+#footer p {
+	margin-bottom: 3px;
+}
+
+#footer h3.last {
+	margin-bottom: 5px;
+}
+
+#footer .social-icons-container a:hover {
+	text-decoration: none;
+}
+
+#footer .social-icons {
+	display: inline-block;
+	margin-right: 6px;
+	margin-top: 15px;
+	padding: 15px;
+	border: 1px solid #fff;
+	border-radius: 50px;
+}
+
+#footer .social-icons:hover {
+	background: #fff;
+	color: #ec3258;
+}
+
+
+#footer p.copyright {
+	margin-top: 50px;
+	font: 300 14px/1.5em "Source Sans Pro", sans-serif;
+	text-align: center;
+	opacity: 0.8;
+}
+
+
+/***** 14. Back To Top Button *****/
+a.back-to-top {
+	display: none;
+	z-index: 999;
+	position: fixed;
+	width: 42px;
+	height: 42px;
+	right: 12px;
+	bottom: 12px;
+	text-indent: -9999px;
+	background: #4b4b4b url("../images/up-arrow.png") no-repeat center 47%;
+	background-size: 18px 18px; 
+	border-radius: 30px;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
+	
+}
+
+a:hover.back-to-top {
+	background-color: #000; 
+}
+
+
+/***** 17. Media Queries *****/
+/* Min-width width 768px */
+@media (min-width: 768px) {
+	h2 {
+		font: 800 44px/1em "Sansita", sans-serif;
+	}
+	
+	h3 {
+		font: 800 26px/1.3em "Sansita", sans-serif;
+	}
+	
+	.button.solid {
+		width: auto;
+	}
+	
+	.navbar {
+        padding: 10px 0;
+		border-bottom: 1px solid rgba(0, 0, 0, 0);
+		background: #fff;
+		-webkit-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
+        -moz-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
+        transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
+		-webkit-backface-visibility: hidden;
+    }
+	
+	.navbar .navbar-collapse {
+		padding-right: 15px;
+	}
+
+    .navbar.top-nav-collapse {
+       	padding: 0;
+		border-bottom: 1px solid #f4f4f4;
+		background-color: #fff;
+		-webkit-box-shadow: 0px -4px 8px #000000;
+		-moz-box-shadow: 0px -4px 8px #000000;
+		box-shadow: 0px -4px 8px #000000;
+		-webkit-backface-visibility: hidden;
+	}
+	
+	.navbar .navbar-brand {
+		margin: 1px 16px 5px 0px;
+		padding-left: 30px;
+	}
+	
+	.navbar .nav.navbar-nav li a {
+		margin: 13px 4px 12px 4px;
+		padding: 8px 12px 9px 12px;
+		background-color: none;
+		border: 1px solid #fff;
+		border-radius: 2px;
+		-o-transition: background .2s ease-in-out,color .2s ease-in-out,border .2s ease-in-out;
+		-webkit-transition: background .2s ease-in-out,color .2s ease-in-out,border .2s ease-in-out;
+		-moz-transition: background .2s ease-in-out,color .2s ease-in-out,border .2s ease-in-out;
+		transition: background .2s ease-in-out,color .2s ease-in-out,border .2s ease-in-out;
+	}
+	
+	.navbar .nav.navbar-nav li.active a,
+	.navbar .nav.navbar-nav li a:hover	{
+		border: 1px solid #ec3258;
+	}
+	
+	header .header-content {
+		padding: 60px 0px 130px 0px;
+	}
+		
+	header .header-content h1 {
+		font: 600 68px/1em "Sansita", sans-serif;
+	}
+
+	header .header-content p {
+		margin-top: 20px;
+		font: 600 24px/1.3em "Source Sans Pro", sans-serif;
+	}
+	
+	header .header-content .countdown {
+		margin-bottom: 15px;
+		font: 300 76px/0.4em "Lato", sans-serif;
+	}
+	
+	header .header-content .countdown #clock .counter-number {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	
+	header .header-content .countdown #clock .counter-number .timer-text {
+		font: 300 18px/1.2em "Source Sans Pro", sans-serif;
+	}
+	
+	#subheader {
+		padding-bottom: 120px;
+	}
+	
+	#subheader h2 {
+		margin-bottom: 30px;
+	}
+	
+	#subheader form {
+		display: inline-block;
+		margin-top: 20px;
+	}
+	
+	#subheader form .form-group {
+		display: inline-block;
+		margin-left: 4px;
+		margin-right: 4px;
+	}
+	
+	#subheader form input,
+	#subheader form button {
+		display: inline-block;
+		margin-top: 0px;
+	}
+	
+	#description h2 {
+		margin-bottom: 30px;
+	}
+	
+	#highlights {
+		padding-top: 20px;
+	}
+	
+	#highlights p {
+		margin-bottom: 60px;
+	}
+	
+	#agenda h2 {
+		margin-bottom: 30px;
+	}
+	
+	#agenda .event-time {
+		margin-top: 35px;
+	}
+	
+	#speakers {
+		padding-top: 30px;
+		padding-bottom: 90px;
+	}
+	
+	#speakers h2 {
+		margin-bottom: 30px;
+	}
+	
+	#faq {
+		padding-top: 50px;
+		padding-bottom: 110px;
+	}
+	
+	#faq .faq-icons {
+		max-width: 50px;
+		height: 45px;
+	}
+	
+	#faq .faq-icons span.faq-icon-number {
+		margin-top: 5px;
+		font: 600 22px/1.5em "Source Sans Pro", sans-serif;
+	}
+	
+	#sponsors img {
+		margin-left: 11px;
+		margin-right: 11px;
+	}
+	
+	#location {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
+	
+	#location img {
+		margin-top: 25px;
+	}
+	
+	#location .map-responsive {
+		padding-bottom: 56.25%;
+	}
+	
+	#footer p.copyright {
+		margin-top: 30px;
+	}
+	
+	a.back-to-top {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+
+/* Min-width width 992px */
+@media (min-width: 992px) {
+	h2 {
+		font: 800 48px/1em "Sansita", sans-serif;
+	}
+	
+	header .header-content {
+		padding: 40px 0px 120px 0px;
+	}
+	
+	header .header-content h1 {
+		font: 600 82px/1em "Sansita", sans-serif;
+	}
+	
+	header .header-content p {
+		margin-top: 30px;
+	}
+	
+	header .header-content .countdown {
+		margin-bottom: 10px;
+		font: 300 86px/0.4em "Lato", sans-serif;
+	}
+	
+	header .header-content .button.transparent {
+		padding: 11px 46px 12px 46px;
+		font: 600 18px/1.3em "Source Sans Pro", sans-serif;
+	}
+	
+	#subheader {
+		padding-top: 40px;
+		padding-bottom: 130px;
+	}
+	
+	#subheader p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	#subheader form .form-group.register-button {
+		display: block;
+	}
+	
+	#subheader form button {
+		display: inline-block;
+		max-width: 180px;
+	}
+	
+	#description {
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+	
+	#description h2 {
+		margin-top: 35px;
+		text-align: left;
+	}
+	
+	#description p {
+		margin-right: 25px;
+	}
+	
+	#description .swiper-container {
+		margin: 20px auto;
+	}
+	
+	#highlights {
+		padding-bottom: 40px;
+	}
+	
+	#highlights p {
+		margin-bottom: 10px;
+	}
+	
+	#agenda {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+	
+	#agenda h2 {
+		margin-bottom: 15px;
+	}
+	
+	#agenda .event-time, #agenda .panel-title {
+		margin-top: 30px;
+	}
+	
+	#agenda .event-time, #agenda .event-time.first {
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+	
+	#agenda .event-time h3 {
+		display: inline-block;
+		margin: 0px;
+		height: 57px;
+		padding-top: 19px;
+		font: 800 20px/0.9em "Sansita", sans-serif;
+		width: 100%;
+		background-color: #ec3258;
+		color: #fff;
+	}
+	
+	#agenda .col-md-9 {
+		padding-left: 0px;
+	}
+	
+	#speakers {
+		padding-bottom: 110px;
+	}
+	
+	#speakers h2 {
+		margin-bottom: 35px;
+	}
+	
+	#speakers p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	#faq {
+		padding-bottom: 120px;
+	}
+	
+	#faq .faq-row .faq-text p {
+		margin-right: 10px;
+	}
+	
+	#faq .col-md-6 {
+		padding-left: 35px;
+		padding-right: 35px;
+	}
+	
+	#sponsors h3 {
+		margin-top: 30px;
+	}
+	
+	#sponsors p {
+		margin-top: 15px;
+	}
+	
+	#sponsors p {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	#location {
+		padding-top: 100px;
+		padding-bottom: 140px;
+		text-align: left;
+	}
+	
+	#location h3:nth-of-type(1) {
+		margin-top: 20px;
+		margin-bottom: 17px;
+	}
+	
+	#location h3:nth-of-type(2) {
+		margin-top: 20px;
+	}
+	
+	#location .accommodation-description, 
+	#location .accommodation-description a {
+		font: 600 12px/1.5em "Source Sans Pro", sans-serif;
+	}
+	
+	#location .map-responsive {
+		margin-left: 13px;
+		padding-bottom: 82.25%;
+	}
+	
+	#footer {
+		text-align: left;
+	}
+}
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
+	header .header-content {
+		padding: 30px 0px 120px 0px;
+	}
+	
+	header .header-content h1 {
+		font: 600 98px/1em "Sansita", sans-serif;
+	}
+	
+	header .header-content .countdown {
+		font: 300 98px/0.4em "Lato", sans-serif;
+	}
+	
+	#subheader {
+		padding-bottom: 140px;
+	}
+	
+	#subheader p {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	#description h2 {
+		margin-top: 70px;
+	}
+	
+	#speakers {
+		padding-bottom: 130px;
+	}
+	
+	#faq {
+		padding-bottom: 130px;
+	}
+	
+	#faq .col-md-6 {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	
+	#location {
+		padding-top: 110px;
+		padding-bottom: 150px;
+	}
+	
+	#location h3:nth-of-type(2) {
+		margin-top: 20px;
+	}
+	
+	#location .accommodation-description, 
+	#location .accommodation-description a {
+		font: 600 16px/1.5em "Source Sans Pro", sans-serif;
+	}
+	
+	#location .map-responsive {
+		margin-left: 18px;
+		padding-bottom: 73.25%;
+	}
+}
