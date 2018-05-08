@@ -372,63 +372,138 @@ header .header-content #svg-header-bottom {
 
 /* 06. Description */
 #description {
-	padding-top: 40px;
-	padding-bottom: 60px;
+	padding-top: 0px;
+	padding-bottom: 30px;
 }
 
 #description h2 {
+	margin-top: 10px;
 	margin-bottom: 25px;
 	text-align: center;
 }
 
-#description .swiper-container {
-	margin: 30px auto;
-	width: 100%;
+#description .panel-group .panel {
+    border: 0px none;
+    border-radius: 0px;
+    box-shadow: none;
 }
 
-#description .swiper-container .swiper-pagination-progressbar {
-	background: #ec3258;
-}
-
-
-#description .swiper-button-next {
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ec3258'%2F%3E%3C%2Fsvg%3E");
-}
-
-#description .swiper-button-prev {
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ec3258'%2F%3E%3C%2Fsvg%3E");
-}
-
-#description .swiper-slide {
-	font-size: 18px;
-	line-height: 300px;
+#description .event-time {
+	margin-top: 30px;
+	margin-bottom: 17px;
 	text-align: center;
+}
+
+#description .event-time.first {
+	margin-top: 25px;
+}
+
+
+#description .event-time h3 {
+	display: block;
+	margin-top: 35px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	background-color: #ec3258;
+	color: #fff;
+}
+
+#description .panel-default > .panel-heading {
+    padding: 0;
+    border-radius: 0px;
+}
+
+/* Event title bar which expands with details */
+#description .panel-title > a {
+    display: block;
+    position: relative;
+	padding: 14px 50px 14px 15px;
+    font: 600 18px/1.5em "Source Sans Pro", sans-serif;
+    border: 1px solid #ef6439;
 	background: #fff;
+	color: #4b4b4b;
+	-o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+#description .panel-title > a:hover {
+    text-decoration: none;
+    outline: none;
+    background: #fff;
+    color: #4b4b4b;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+#description .panel-title > a:focus {
+    text-decoration: none;
+    outline: none;
 }
 
-.fadeIn {
-  -webkit-animation: fadeIn 0.6s;
-  animation: fadeIn 0.6s;
+/* Minus toggle switch state */
+#description .panel-title > a:after,
+#description .panel-title > a.collapsed:after {
+    content: "\e622";
+    font-family: themify;
+    color: #ef6439;
+    background: #fff;
+	border: 1px solid #ef6439;
+	border-radius: 25px;
+    font-size: 15px;
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    padding: 8px 7px 8px 8px;
+	line-height: 0.9em;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+/* Toggle switch hover properties */
+#description .panel-title > a:hover:after,
+#description .panel-title > a:hover.collapsed:after {
+	background: #ef6439;
+	color: #fff;
+}
+
+/* Plus toggle switch state */
+#description .panel-title > a.collapsed:after {
+    content: "\e61a";
+	background-color: #fff; 
+	color: #ef6439;
+}
+
+/* Event title bar with no details */
+#description .panel-title > a.no-details {
+	display: block;
+    position: relative;
+	padding: 14px 15px 14px 15px;
+    font: 600 18px/1.5em "Source Sans Pro", sans-serif;
+    border: 1px solid #ef6439;
+	background: #fff;
+	color: #4b4b4b;
+	-o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+#description .panel-title > a.no-details:after {
+	content: none;
+}
+
+/* Presentation details */
+#description .panel-body {
+    color: #3e3e3e;
+    background: #fff;
+	border: 1px solid #ef6439;
+    line-height: 24px;
+}
+
+#description .panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top: 0px none;
 }
 
 
