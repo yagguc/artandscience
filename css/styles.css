@@ -188,7 +188,7 @@ header {
 	min-height: auto;
 	width: 100%;
 	background: #ec3258; /* For browsers that do not support gradients */    
-    background: linear-gradient(to bottom right, rgba(236, 50, 88, 0.9), rgba(239, 100, 57, 0.9)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
