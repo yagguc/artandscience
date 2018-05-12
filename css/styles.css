@@ -188,7 +188,7 @@ header {
 	min-height: auto;
 	width: 100%;
 	background: #ec3258; /* For browsers that do not support gradients */    
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1000,7 +1000,7 @@ header .header-content #svg-header-bottom {
 	position: relative;	
 	padding-top: 70px;
 	padding-bottom: 80px;
-	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_on_the_waal_janvangoyen.jpg/1280px-View_on_the_waal_janvangoyen.jpg") center no-repeat;
 	background-size: cover;
 	text-align: center;
 }
