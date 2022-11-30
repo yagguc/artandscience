@@ -29,7 +29,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
-	$(this).html('This offer has expired!')
+	$(this).html('')
 		.parent().addClass('disabled');
 	});
 	
